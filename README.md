@@ -1,1 +1,0 @@
-# Day-27-Animated-Card
