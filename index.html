@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Project Card</title>
+  <style>
+:root {
+  --bg-color: #19231a;
+  --card-color: #08ff25;
+  --accent-color: #ff007f;
+  --base-size: 16px;
+  --move-distance: -200px;
+  --animation-time: 3s;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: calc(var(--base-size) * 18);
+  padding: calc(var(--base-size) * 2);
+  border-radius: 12px;
+  text-align: center;
+
+  background: var(--card-color);
+
+  box-shadow: 0 8px 24px rgb(255, 255, 255);
+
+  animation: floatCard var(--animation-time) infinite alternate;
+}
+
+.card h2 {
+  color: var(--accent-color);
+  margin-top: 0;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #ff3e3e;
+}
+
+.rocket {
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@keyframes floatCard {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(var(--move-distance));
+  }
+}
+
+
+
+
+
+    
+
+</style>
+</head>
+  <body>
+
+
+<div class="card">
+    <h2>🎨 My Projects</h2>
+  <p>I'm learning....</p>
+<div class="rocket">🚀</div> 
+    
+    
+</body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+    
